@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.lefteris.recognition.MainActivity">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="190dp"
+                android:text="Start/Stop Safety Service"
+                android:layout_weight="0.36"
+                android:id="@+id/textView4"/>
+
+                <Switch
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Safety First"
+                android:layout_weight="0.36"
+                android:id="@+id/btnSafety"/>
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0"
+                android:layout_row="15"
+                tools:layout_editor_absoluteX="283dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/speed"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:text="SpeedTest" />
+
+                <Button
+                    android:id="@+id/traffic"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:text="Traffic Layers" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:background="@drawable/recognition"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
